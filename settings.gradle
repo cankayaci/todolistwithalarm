@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "201735039 To do List with Alarm"
