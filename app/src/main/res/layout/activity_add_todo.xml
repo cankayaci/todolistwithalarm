@@ -54,8 +54,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:enabled="false"
                 android:importantForAutofill="no"
                 android:inputType="date" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFEA00"
+                android:onClick="showDatePickerDialog"
+                android:text="@string/pick" />
 
         </LinearLayout>
 
@@ -74,8 +82,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:enabled="false"
                 android:importantForAutofill="no"
                 android:inputType="time" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFEA00"
+                android:onClick="showTimePickerDialog"
+                android:text="@string/pick" />
 
         </LinearLayout>
 
@@ -88,6 +104,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#8297FF"
+                android:onClick="saveOnClickButton"
                 android:text="@string/save" />
 
         </LinearLayout>

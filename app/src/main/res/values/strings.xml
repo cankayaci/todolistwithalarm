@@ -10,4 +10,17 @@
     <string name="todo_name">Todo Name</string>
     <string name="edit">Edit</string>
     <string name="delete">Delete</string>
+    <string name="saved_todo">Todo added!</string>
+    <string name="todo_name_error">Todo name should be filled!</string>
+    <string name="todo_date_error">Date is not valid format! Example : 22.05.2020</string>
+    <string name="todo_time_error">Time is not valid format! Example 16:45</string>
+    <string name="pick_date">PICK DATE</string>
+    <string name="pick_time">PICK TIME</string>
+    <string name="pick">PICK</string>
+    <string name="delete_icon">Delete icon</string>
+    <string name="delete_entry">Delete entry</string>
+    <string name="are_you_sure_delete">Are you sure you want to delete this entry?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="edited_todo">Todo edited</string>
 </resources>

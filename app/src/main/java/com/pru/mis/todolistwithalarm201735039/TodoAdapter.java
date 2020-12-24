@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -64,6 +63,7 @@ public class TodoAdapter extends RecyclerView.Adapter<TodoAdapter.MyViewHolder> 
                     intent.putExtra("todoName", tvName.getText());
                     intent.putExtra("todoDate", tvDate.getText());
                     intent.putExtra("todoTime", tvTime.getText());
+                    intent.putExtra("todoPosition", getAdapterPosition());
                     context.startActivity(intent);
                 }
             });

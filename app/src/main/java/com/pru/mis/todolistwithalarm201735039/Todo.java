@@ -4,6 +4,7 @@ public class Todo {
     private String todoName;
     private String todoDate;
     private String todoTime;
+    private boolean done;
 
     public Todo() {
     }
@@ -12,6 +13,13 @@ public class Todo {
         this.todoName = todoName;
         this.todoDate = todoDate;
         this.todoTime = todoTime;
+    }
+
+    public Todo(String todoName, String todoDate, String todoTime, boolean done) {
+        this.todoName = todoName;
+        this.todoDate = todoDate;
+        this.todoTime = todoTime;
+        this.done = done;
     }
 
     public String getTodoName() {
@@ -38,5 +46,12 @@ public class Todo {
         this.todoTime = todoTime;
     }
 
+    public boolean isDone() {
+        return done;
+    }
+
+    public void setDone(boolean done) {
+        this.done = done;
+    }
 }
 
