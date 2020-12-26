@@ -23,4 +23,7 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="edited_todo">Todo edited</string>
+    <string name="stop_alarm">Stop alarm</string>
+    <string name="no_todos_message">Add some todo and come back here!</string>
+    <string name="todo_date_time_error">Date and time must be greater than now!</string>
 </resources>

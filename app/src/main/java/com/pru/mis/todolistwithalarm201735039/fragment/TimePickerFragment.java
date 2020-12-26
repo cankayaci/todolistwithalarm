@@ -1,4 +1,4 @@
-package com.pru.mis.todolistwithalarm201735039;
+package com.pru.mis.todolistwithalarm201735039.fragment;
 
 import android.app.Dialog;
 import android.app.TimePickerDialog;
@@ -15,12 +15,10 @@ public class TimePickerFragment extends DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        // Use the current time as the default values for the picker
         final Calendar c = Calendar.getInstance();
         int hour = c.get(Calendar.HOUR_OF_DAY);
-        int minute = c.get(Calendar.MINUTE);
+        int minute = (c.get(Calendar.MINUTE) + 1) % 60;
 
-        // Create a new instance of TimePickerDialog and return it
         return new TimePickerDialog(getActivity(), (TimePickerDialog.OnTimeSetListener) getActivity(), hour, minute,
                 DateFormat.is24HourFormat(getActivity()));
     }

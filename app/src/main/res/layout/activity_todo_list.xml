@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TodoListActivity">
+    tools:context=".activity.TodoListActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvTodoList"
@@ -14,5 +14,39 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNoTodoMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_todos_message"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvTodoList" />
+
+    <ImageView
+        android:id="@+id/ivAddTodo"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="8dp"
+        android:onClick="addTodoOnClick"
+        android:src="@drawable/ic_add_black_24dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNoTodoMessage" />
+
+    <TextView
+        android:id="@+id/tvAddTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addTodoOnClick"
+        android:text="@string/add_to_do"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivAddTodo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

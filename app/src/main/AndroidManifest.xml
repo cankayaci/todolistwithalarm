@@ -9,16 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EditTodoActivity"></activity>
-        <activity android:name=".TodoListActivity" />
-        <activity android:name=".AddTodoActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.EditTodoActivity" />
+        <activity android:name=".activity.TodoListActivity" />
+        <activity android:name=".activity.AddTodoActivity" />
+        <activity android:name=".activity.AlarmActivity" />
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver
+            android:name=".receiver.AlarmReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
